@@ -1,0 +1,406 @@
+/* =====================
+   RESET & BASE
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* =====================
+   HEADER
+   ===================== */
+header {
+  background-color: #d7bde2;
+  color: white;
+  padding: 2rem 3rem;
+  border-bottom: 6px solid #e8c547;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.8rem;
+}
+
+/* =====================
+   NAVIGATION
+   ===================== */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #e8c547;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #6c3483;
+  color: white;
+}
+
+/* =====================
+   MAIN CONTENT
+   ===================== */
+main {
+  max-width: 55rem;
+  margin: 3rem auto;
+  padding: 0.5 2rem;
+}
+
+/* =====================
+   HEADINGS
+   ===================== */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c3483;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #4a235a;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6c3483;
+  margin-bottom: 0.5rem;
+}
+
+/* =====================
+   PARAGRAPHS
+   ===================== */
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* =====================
+   LISTS
+   ===================== */
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0.8rem 0 1.2rem 1.5rem;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin: 0.8rem 0 1.2rem 1.5rem;
+}
+
+ul li,
+ol li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+dl {
+  margin: 0.8rem 0 1.2rem 0;
+}
+
+dt {
+  font-weight: bold;
+  color: #6c3483;
+  margin-top: 0.8rem;
+  text-transform: capitalize;
+}
+
+dd {
+  margin-left: 1.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* =====================
+   LINKS
+   ===================== */
+a {
+  color: #6c3483;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e8c547;
+}
+
+/* =====================
+   TABLE
+   ===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem 0;
+}
+
+th {
+  background-color: #6c3483;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+tr:hover td {
+  background-color: #e8daef;
+}
+
+/* =====================
+   BLOCKQUOTE
+   ===================== */
+blockquote {
+  border-left: 5px solid #e8c547;
+  background-color: #fdf6dd;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #6c3483;
+}
+
+/* =====================
+   ARTICLE (projects)
+   ===================== */
+article {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+  border-bottom: 2px solid #e8c547;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* =====================
+   FIGURE & IMAGE
+   ===================== */
+figure {
+  margin: 1rem 0;
+}
+
+figure img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+/* =====================
+   FORM
+   ===================== */
+form {
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 1rem;
+  max-width: 36rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #6c3483;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2c3e50;
+  outline: none;
+  box-shadow: 0 0 4px rgba(44, 62, 80, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+button[type="submit"]:hover {
+  background-color: #e8c547;
+  color: #2c3e50;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   CLASS SELECTORS
+   ===================== */
+
+/* Highlight any text with this class */
+.highlight {
+  background-color: #fdf6dd;
+  border-left: 4px solid #e8c547;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* Button style link */
+.btn {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  margin-top: 0.8rem;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #e8c547;
+  color: #2c3e50;
+}
+
+/* Back to top link */
+.back-to-top {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: #e8c547;
+}
+
+/* =====================
+   ID SELECTORS
+   ===================== */
+
+/* Intro section on homepage */
+#intro {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Contact info paragraph */
+#contact-info {
+  background-color: #fdf6dd;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e8c547;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+@media (max-width: 48rem) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  figure img {
+    max-width: 100%;
+  }
+
+  form {
+    padding: 1.2rem;
+  }
+}
