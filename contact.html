@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Website - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Contact Me</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" id="top">
+
+    <h2>Get in Touch</h2>
+
+    <p id="contact-info">You can reach me via the form below or email me directly at
+      <a href="mailto:johndoe@example.com">johndoe@example.com</a>
+    </p>
+
+    <form onsubmit="return validateForm()">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" aria-required="true" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" aria-required="true" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 John Doe. CSC457 - Internet Technologies.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
