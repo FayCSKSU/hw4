@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Website - Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <h1>My Projects</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" id="top">
+
+    <h2>Selected Projects</h2>
+
+    <article>
+      <h3>TaskFlow - To-Do App</h3>
+      <p class="project-desc">A drag-and-drop task manager built with vanilla JavaScript. Users can create tasks, assign priorities, and track progress.</p>
+      <figure>
+        <img src="taskflow.png" alt="Screenshot of TaskFlow app showing a kanban board" width="400" />
+        <figcaption>TaskFlow - built with HTML, CSS, and JavaScript</figcaption>
+      </figure>
+      <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+      <button onclick="toggleDescription(this)">Hide Description</button>
+      <a href="https://github.com/johndoe/taskflow" target="_blank" class="btn">GitHub</a>
+      <a href="https://johndoe.github.io/taskflow" target="_blank" class="btn">Live Demo</a>
+    </article>
+
+    <article>
+      <h3>WeatherNow - Weather Dashboard</h3>
+      <p class="project-desc">A weather dashboard that fetches real-time data from the OpenWeather API and displays forecasts for any city.</p>
+      <figure>
+        <img src="weathernow.png" alt="Screenshot of WeatherNow showing a 7-day weather forecast" width="400" />
+        <figcaption>WeatherNow - real-time weather data with charts</figcaption>
+      </figure>
+      <p><strong>Technologies:</strong> Python, Flask, OpenWeather API</p>
+      <button onclick="toggleDescription(this)">Hide Description</button>
+      <a href="https://github.com/johndoe/weathernow" target="_blank" class="btn">GitHub</a>
+      <a href="https://johndoe.github.io/weathernow" target="_blank" class="btn">Live Demo</a>
+    </article>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 John Doe. CSC457 - Internet Technologies.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
